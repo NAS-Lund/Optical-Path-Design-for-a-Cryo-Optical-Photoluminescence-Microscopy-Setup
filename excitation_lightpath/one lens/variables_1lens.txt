@@ -1,0 +1,52 @@
+VARIABLES EXCITATION PATH - ONE-LENS CONFIGURATION
+ALL VARIABLES IN [mm] OR [ºdeg]
+VARIABLE NAMES FOLLOW THE STRUCTURE: element_description 
+CONSIDERATIONS: 
+	- COLLIMATED RAYS AFTER THE COLLIMATOR - AUGMENT OF SIZE OF BEAM PER MM CALCULATED
+	- FOCAL LENGTH OF THE LENS L1 MUST BE OF A REASONABLE SIZE (no more than 300mm) IN ORDER TO PREVENT ABERRATIONS 	
+
+VARIABLE SUMMARY
+SAMPLE 
+- s_size: radius of the area of the sample that is illuminated
+
+BEAM
+- beam_r_coll: size of the collimated beam after the collimator assuming perfect collimation
+- incr_beam_r_coll: increase in size of the collimated beam due to imperfections in the collimation 
+- tan_phi: tangent of the angle that the beam makes wrt the optical axis after the focal point of L1
+
+FIBER
+- fib_rcore: radius of the optic fiber core 
+- fib_na: numerical aperture of the fiber 
+- fib_type: type of fiber multimode ("MM")/single mode ("SM") (STRING) - only for .txt file title
+
+COLLIMATOR
+- coll_f: focal length of the collimator
+- coll_theta_div: divergence angle of the light out of the collimator (only for indication, assumed 0º for the rest of the calculations of the code)
+- coll_mount: minimum distance from end of collimator to L1 (lens)
+- coll_theta_measured: measured divergence angle (in degrees)
+- divergence_angle ["exp"/"theo"]: option to use either experimentally measured or theoretical divergence angle from the collimator (STRING)
+
+OBJECTIVE
+- obj_tube: length of objective tube
+- obj_f: focal length of the objective
+- obj_ca: clear aperture S
+- obj_y: size of the beam at the objective
+
+DISTANCES 
+- d_fpp: f'' on the sketches' notation. Distance from the focal point of L1 to the obj_f before the objective lens
+- d_fp: f' on sketches' notation. Displacement of the focal point of the obj wrt focal plane
+
+CONSTRAINTS
+- d_fpoint_to_objlens: distance from the focal point of L1 until objective lens (f''+obj_f)
+- d_l1_to_objlens: distance from the objective lens until L1 (min distance at which the first optics can be place wrt objective lens)
+
+LENS
+- l1_f: focal length of the L1 lens. If l1_f = 0, the code will calculate a new focal length. Otherwise it will check if the input focal length fullfils the set-up constraints. 
+- l1_min_f: minimal focal length of L1 according to the constraints
+
+
+
+
+
+
+

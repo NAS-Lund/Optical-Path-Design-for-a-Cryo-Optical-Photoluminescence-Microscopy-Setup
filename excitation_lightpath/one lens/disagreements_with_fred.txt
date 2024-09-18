@@ -1,0 +1,7 @@
+DISAGREEMENTS WITH SOFTAWARE SIMULATIONS
+When running the Python code and obtaining certain theoretical values, and the comparing them with what is obtained in the simulation on the ray-tracing software FRED Optimum, some disagreements are found. This disagreements occur for the two types of optical fiber considered (MM Ø50µm NA0.22, SM Ø4.5µm NA0.13), but specially observed for the MM fiber. T
+
+The reasons for these disagreements are not clear, but some hypothesis were made. The main hypothesis is the fact that the theoretical calculations that base the Python code are within the frame of ray optics. Therefore, only ideal thin lenses were considered. However, FRED doesn't allow simulations with ideal lenses, so real lenses with real parameters including a finite thickness were considered. Some of the lenses being some mm of thickness. The thickness of the lenses has an impact on the rays' trajectories, and therefore it can produce a different result than expected. 
+
+Another consideration to make, however, is that with this system we are aiming to focus the beam with µm precision, so the deviations from the theoretical calculations to the simulations are in the order of some µm. Still, for the experiment it is important to be able to focus with such precision. 
+
