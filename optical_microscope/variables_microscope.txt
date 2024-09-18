@@ -1,0 +1,37 @@
+VARIABLES MICROSCOPE SET-UP SPYDER CODE
+ALL VARIABLES ENTERED IN [mm] OR [ºdeg]
+VARIABLE NAMES FOLLOW THE STRUCTURE: element_description 
+
+VARIABLE SUMMARY
+SAMPLE 
+- s_size: radius of the area of the sample that is illuminated
+
+OBJECTIVE
+- obj_tube: length of objective tube
+- obj_f: focal length of the objective
+- obj_ca: clear aperture of the objective 
+
+DISTANCES
+- d_obj_to_tube: distance from the objective lens to the tube lens
+- d_tl1_to_tl2: distance between the telescope lenses (telescope length)
+- d_total: total length of the set-up from objective lens to slit
+
+SPECTROMETER
+- spec_slit_size: half of the size of the spectrometer slit (final image cannot be bigger than that in order to image the full illuminated sample spot)
+
+LENSES
+- lens_tube_f: focal length of tube lens 
+- lens_tl1_bf: back focal length of telescope lens 1
+- lens_tl2_f: focal length of telescope lens 2
+
+MAGNIFICATION
+- mag_tube: magnification at the image plane of the tube lens
+- mag_tl2: magnification at the image plane of the telescope (second magnification)
+- mag_total: total magnification of the microscope system 
+
+IMAGE
+- image_size_imptube: image size at the image plane of the tube lens
+- image_size_slit: image size at the slit of the spectrometer (check)
+
+
+
